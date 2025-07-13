@@ -1,21 +1,172 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 40px;
-}
-h1, h2 {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
   color: #333;
 }
-ul {
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-links {
   list-style: none;
-  padding: 0;
+  display: flex;
+  gap: 20px;
 }
-li {
-  margin: 10px 0;
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
 }
-a {
-  color: #0066cc;
+
+.nav-links li a:hover {
+  color: #0077cc;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.hero-text h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.hero-text p {
+  max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Section Links */
+.section-links {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-links h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #ffffffcc;
+  padding: 30px;
+  width: 250px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.contact a {
+  color: #0077cc;
   text-decoration: none;
 }
-a:hover {
-  text-decoration: underline;
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icon {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #555;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #0077cc;
+  transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: #f2f2f2;
+  color: #555;
+}
+
+/* Section Separation */
+section {
+  padding: 60px 20px;
+}
+
+/* Social Media Icons */
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
 }
